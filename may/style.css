@@ -1,0 +1,131 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color:  #0c271a
+    ;
+    color: #000;
+    padding: 40px;
+    line-height: 1.6;
+  }
+
+    .fundo {
+      background-image: url('jp_topoFundo.jpg');
+      width: 900px;
+      height: 500px; /* Defina um valor real aqui */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+  }
+      
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* essa camada escurece o fundo */
+        z-index: -1;
+      }
+  .sobreposta {
+    position: absolute;
+    top: 9%; /* Posiciona a imagem no meio do contêiner */
+    right: 80%;
+    transform: translate(-50%, -50%); /* Centraliza a imagem */
+    width: 150px; /* Tamanho da imagem sobreposta */
+    height: auto;
+    z-index: 1; /* Garante que a imagem sobreposta fique por cima da imagem de fundo */}
+        .container {
+            position: relative;
+            width: 125px;
+            height:  2675px;
+        }
+         /* Imagem de fundo */
+         .fundo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height:125px ;
+            width: 2675px;
+            object-fit: cover; /* Garante que a imagem de fundo cubra toda a área do contêiner */
+        }
+ .menu{
+    width: 500px;
+    height: 40px;
+    background-image: url(jp_menuFundo.jpg);
+    position: relative;
+    top: -70%;
+    left: 405px;
+    border: 2px solid #ffffff;
+    border-radius:20px 0px ;
+    z-index: 2;
+    text-align: center;
+    line-height: 40px;}
+    .menuLink{
+        font-family: Arial;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    @font-face {
+        font-family: Jurassic;
+        src: url(jp_fontJurassicPark.ttf);
+    }
+     .paginaTítulo{
+        font-size: 70px;
+        color:#ffffff;
+        font-family: Jurassic;
+        
+     }
+    
+ .titulo{
+    color: rgb(252, 252, 252);
+    background-color: rgb(123, 14, 14);
+    text-align:center;
+    line-height: 100px;
+    margin: 0;
+    height: 111px;
+    width: 1850px;
+  }
+
+.filme1 {
+  width: 1850px;
+  height: 300px;
+  background-color: #ffffff;
+  margin: auto;
+}
+  /* Tabela */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  thead {
+    background-color: #eee;
+    font-weight: bold;
+  }
+  
+  /* Rodapé */
+  footer {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-top: 40px;
+  }
